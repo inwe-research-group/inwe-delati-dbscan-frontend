@@ -26,7 +26,7 @@ export const Formulario = () => {
     const handleSubmit = async (e) => {
         e.preventDefault()
         setLoading(true);
-        const res = await fetch(`${API}/dbscan_model`, {
+        const res = await fetch(`${API}/dbscan`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
